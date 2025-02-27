@@ -1,24 +1,24 @@
 import { useState } from 'react'
 import './App.css'
 
-function PostButton() {
+function PostField() {
   return (
-    <button name = "postButton">
-      +
-    </button>
+    <div id = "postField">
+      <label for = "postButton">Share your thoughts</label>
+      <button name = "postButton">
+        +
+      </button>
+      {/* <input type="text" id="postContent" name = "What do you want to create today?"></input> */}
+
+    </div>
   );
 }
 
 function App() {
   return (
     <>
-      
       <h1> Proster </h1>
-      <div id = "postField">
-        <label for = "postButton">Share your thoughts</label>
-        <PostButton />
-        {/* <input type="text" id="postContent" name = "What do you want to create today?"></input> */}
-      </div>
+      <PostField />
     </>
   )
 }
